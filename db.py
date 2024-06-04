@@ -260,7 +260,7 @@ with oracledb.connect(user="", password="", dsn="") as connection:
             except:
                 label.config(text="Najpierw dodaj dane do tabeli zamowienia, towar")
 
-            with open("pliczek.txt", "w") as plik:
+            with open("file.txt", "w") as plik:
                 plik.write(pole)
             print("ende")
             if label["text"] == "":
